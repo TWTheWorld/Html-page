@@ -58,19 +58,28 @@ form {
     display: #7f86e3;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    border-radius: 20px;
   }
   
   /* Set a style for all buttons */
   button {
+    display: flex;
+    position: absolute;
+    right:5px;
+    margin:0px;
+    text-align: center;
     background-color: #7f86e3;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
+    padding: 14px 15px;
+    border-radius: 15px;
     cursor: pointer;
-    width: 100%;
+    width: 75px;
   }
-  
+  form{
+    margin: 0px 5px 0px 5px;
+    padding: 0px;
+    border:none;
+  }
   /* Add a hover effect for buttons */
   button:hover {
     opacity: 0.8;
@@ -97,7 +106,8 @@ form {
   
   /* Add padding to containers */
   .container {
-    padding: 16px;
+    padding: 0px;
+    margin: 0px;
   }
   
   /* The "Forgot password" text */
@@ -119,15 +129,15 @@ form {
     </style> 
 </head>
 <body>
-
-    <div class="container">
-        <h1>J i D o r i</h1>
+  <div class="container">
+    <form>
+      <h1>J i D o r i</h1>
       <label for="uname" style="color:#7f86e3"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="uname" required>
-      
-          <label for="psw" style="color:#7f86e3"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-        </div>
-      
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="psw" style="color:#7f86e3"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <button>NEXT</button>
+    </form>
+  </div> 
 </body>
 </html>

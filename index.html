@@ -8,9 +8,9 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
         h1{
-            font-size: 3em;
+            font-size: 2.5em;
             font-family: 'Alfa Slab One', cursive;
-            color: #7f86e3;
+            color: white;
         }
         body{
             background-color: #06002b;
@@ -30,12 +30,27 @@
 body, html {
     height: 100%;
 }
+header{
+    background-color: #040d69;
+    border-radius: 30px;
+}
+header h1{
+    margin: 0px 20px;
+}
+footer{
+    background-color: #040d69;
+    border-radius: 30px;
+}
+p{
+    color: #ffffff; 
+    text-align: center;  
+}
 
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: url("KakaoTalk_20220929_194442502.gif");
-    margin:  50% auto;
+  background-image: url("face.gif");
+    margin:  30% auto;
     width: 100%;
   /* Set a specific height */
   height: 30%;
@@ -49,7 +64,20 @@ body, html {
     </style> 
 </head>
 <body>
-    <h1>J i D o r i</h1>
+    <header>
+        <h1>J D</h1>
+    </header>
+    
     <div class="hero-image"></div>
+
+    <select name='fruits'>
+        <option value='' selected>-- 선택 --</option>
+        <option value='http://www.naver.com'>사과</option>
+        <option value='banana'>바나나</option>
+        <option value='lemon'>레몬</option>
+    </select>
+    <footer>
+        <p>홍보글헤헤헤ㅔ헿</p>
+    </footer>
 </body>
 </html>
